@@ -1,0 +1,240 @@
+body{
+	background-color: #f4f4f4;
+	overflow: hidden;
+}
+
+.page-container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: auto;
+}
+.page-content{
+	width: 100%;
+	height: 100%;
+	background: url(cart-ph1.png) no-repeat top center;
+	background-size: 100% 30%;
+}
+.page-settlement{
+	height: 54px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: #fff;
+	line-height: 54px;
+}
+.contain{
+	width: calc(100% - 30px);
+	padding: 0 15px;
+	padding-bottom: 10px;
+}
+
+.cart-title{
+	width: 100%;
+	height: 88px;
+	display: flex;
+	color: #fff;
+	line-height: 88px;
+}
+.cart-title>i{
+	width: 20px;
+	flex-shrink: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+.cart-title>span{
+	flex: 1;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* 地址 */
+.address{
+	width: 100%;
+	height: 82px;
+	background-color: #fff;
+	border-radius: 12px;
+	color: #333;
+	position: relative;
+}
+.address .isnull{text-align: center;line-height: 62px;}
+.address .isnull>span{
+	font-size: 20px;
+}
+.address>div:nth-child(1){
+	font-size: 16px;
+	padding-top: 10px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+.address>p:nth-child(2){
+	font-size: 13px;
+	padding-top: 5px;
+	padding-left: 15px;
+	width: calc(100% - 70px);
+}
+.address i.icon-arrow-right{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 12px;
+	font-size: 20px;
+	color: #bbb;
+}
+
+
+.contain .productOrder{
+	width: calc(100% - 15px);
+	background-color: #fff;
+	margin-top: 10px;
+	border-radius: 12px;
+	padding-left: 15px;
+}
+
+/* 商品title */
+.title{
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+}
+.title img{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+.title span{
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.goods{
+	width: 100%;
+	display: flex;
+}
+
+.pro-img{
+	width: 100px;
+	flex-shrink: 0;
+}
+.pro-img img{
+	width: 86px;
+	height: 86px;
+}
+.goods-detail{
+	flex: 1;
+	margin: 0 20px;
+	line-height: 35px;
+}
+.goods-name{font-size: 14px; color: #333;}
+.goodsprice>span:nth-child(1){
+	float: left;
+	color: #bf1111;
+	font-size: 15px;
+}
+.goodsprice>span:nth-child(2){
+	float: right;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333;
+}
+
+/* 发票 */
+.invoice{
+	padding-top: 20px;
+	width: 100%;
+	font-size: 14px;
+	color: #333;
+}
+.invoice>span:nth-child(1){
+	float: left;
+}
+.invoice>span:nth-child(2){
+	float: right;
+	margin-right: 20px;
+}
+
+/* 留言 */
+.message{padding: 20px 0 10px 0;width: 100%; line-height: 21px;}
+.message>span{
+	font-size: 14px;
+	color: #333;
+}
+.message>input{
+	outline: 0;
+	border: 0;
+	width: calc(100% - 70px);
+}
+
+.commodity-amount{
+	width: calc(100% - 15px);
+	background-color: #fff;
+	margin-top: 10px;
+	border-radius: 12px;
+	padding-left: 15px;
+}
+.commodity-amount li{
+	height: 42px;
+	padding-right: 20px;
+	line-height: 42px;
+	font-size: 14px;
+	color: #333;
+}
+.commodity-amount li>span:nth-child(1){
+	float: left;
+}
+.commodity-amount li>span:nth-child(2){
+	float: right;
+}
+.commodity-amount li>.redwords{color: #BF1111;}
+
+.bottom-ads{
+	height: 100px;
+	padding-top: 10px;
+	background-color: rgb(250, 248, 217);
+}
+
+.contain2{
+	width: calc(100% - 60px);
+	padding: 0 30px;
+	padding-bottom: 10px;
+	color: #666;
+	font-size: 14px;
+}
+
+/* 合计 */
+.page-settlement>div:nth-child(1){
+	float: left;
+	margin-left: 20px;
+}
+.page-settlement>div:nth-child(1)>span:nth-child(1){
+	font-size:14px;
+	color:#333;
+	font-weight:bold;
+}
+.page-settlement>div:nth-child(1)>span:nth-child(2),.page-settlement>div:nth-child(1)>span:nth-child(2)>b{
+	font-size: 22px;
+	color: #BF1111;
+	font-weight: bold;
+}
+.page-settlement>div:nth-child(1)>span:nth-child(3){
+	font-size:13px;
+	color:#333;
+	font-weight:bold;
+}
+.page-settlement>div:nth-child(2){
+	float: right;
+	margin-right: 20px;
+}
+.page-settlement>div:nth-child(2)>button{
+	width: 100px;
+	height: 38px;
+	background-color: rgb(191, 17, 17);
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 20px;
+	border: 0;
+	outline: 0;
+}

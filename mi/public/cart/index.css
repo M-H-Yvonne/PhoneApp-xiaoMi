@@ -1,0 +1,203 @@
+.page-container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.page-content{
+	width: 100%;
+	/* height: 100%; */
+	background: url(cart-ph1.png) no-repeat top center;
+	background-size: 100% 30%;
+	flex: 1;
+	overflow: auto;
+}
+
+.page-settlement{
+	height: 54px;
+	width: 100%;
+	/* position: fixed; */
+	bottom: 0;
+	background-color: #fff;
+}
+
+.contain{
+	width: calc(100% - 30px);
+	padding: 0 15px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.cart-title{
+	width: 100%;
+	height: 88px;
+	display: flex;
+	color: #fff;
+	line-height: 88px;
+}
+.cart-title>i{
+	width: 42px;
+	flex-shrink: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+.cart-title>span{
+	flex: 1;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+.cart-title>b{
+	width: 42px;
+	flex-shrink: 0;
+	text-align: center;
+}
+.own{
+	width: 100%;
+	height: 44px;
+	display: flex;
+	border-radius: 8px 8px 0 0;
+	background-color: #fff;
+	font-size: 14px;
+}
+.own>i,.product li i.check,.checkAll>i.check{
+	border: 2px solid #ccc;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	text-align: center;
+	margin-top: 12px;
+	margin-left: 10px;
+	line-height: 15px;
+	color: #fff;
+	font-size: 14px;
+	display: block;
+}
+.own>span{
+	line-height: 44px;
+	margin-left: 10px;
+}
+
+/* 商品 */
+.product li i.check{
+	margin-top: 25px;
+}
+.product{
+	background-color: #fff;
+	width: 100%;
+	border-radius:0 0 8px 8px ;
+	flex: 1;
+	overflow: auto;
+}
+.product>li{
+	display: flex;
+	width: 100%;
+}
+.product>li>div:nth-child(1){
+	width: 40px;
+}
+.pro-img{
+	width: 86px;
+	height: 86px;
+}
+.pro-img img{
+	width: 80%;
+	height: 80%;
+}
+.product>li>div:nth-child(3){
+	flex: 1;
+	margin-right: 10px;
+}
+
+.nums{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.nums>p{
+	color: #d00;
+	line-height: 27px;
+}
+/* 数量加减 */
+.proNum{font-size: 0;}
+.minus,.plus{
+	display: inline-block;
+	width: 25px;
+	height: 27px;
+	background-color: #ddd;
+	text-align: center;
+	font-size: 16px;
+	line-height: 27px;
+}
+.minus{
+	border-radius: 10px 0 0 10px;
+}
+.plus{
+	border-radius: 0 10px 10px 0;
+}
+.cart-num{
+	width: 36px;
+	height: 25px;
+	display: inline-block;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	line-height: 24px;
+	font-size: 16px;
+	outline: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+/* 总计 */
+.page-settlement{
+	width: 100%;
+}
+.checkAll{
+	float: left;
+	display: flex;
+}
+.checkAll>i.check{
+	margin-top: 17px;
+}
+.checkAll>span{
+	line-height: 54px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.total{
+	float: right;
+	display: flex;
+	line-height: 54px;
+}
+.total>p{
+	font-size: 12px;
+}
+.total>p>span:nth-child(2){
+	font-size: 15px;
+	color: #d00;
+}
+.total>div{
+	margin-left: 10px;
+}
+.total>div button{
+	width: 96px;
+	height: 38px;
+	background: linear-gradient(to right, rgb(240, 78, 46), rgb(213, 16, 16));
+	border-radius: 20px;
+	outline: none;
+	border: 0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+.totalnumbers{
+	display: none;
+}
+.del{display: none;}

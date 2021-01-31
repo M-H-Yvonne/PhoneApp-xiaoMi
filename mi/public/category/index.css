@@ -1,0 +1,125 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+/* 弹性容器-->子元素为弹性项目 */
+/* 
+弹性容器内的两条轴
+主轴，弹性项目在弹性容器内会沿主轴摆放
+交叉轴，永远和主轴垂直
+ */
+.page-container{
+	display: flex;
+	flex-direction: column;/* 列 */
+	height: 100%;
+}
+
+.page-header{
+	height: 12vw;
+	flex-shrink: 0;
+}
+
+.page-content{
+	flex: 1;
+	display: flex;
+	/* 弹性项目，我虽然没有显示的设置高度,但是我的align-self表示
+		我在交叉轴方向(垂直方向)的距离是参照我的弹性容器的align-self的取值，
+		相当于我隐式的表达出了我的高度限定 */
+	/* align-self: inherit; */
+	overflow: hidden;/* 表示我要遵从隐式或者显式的高度约定，超过了我要隐藏 */
+	align-items: stretch;/* 默认值，拉伸， */
+	border-top: 1px solid #b0b0b0;
+	border-bottom: 1px solid #b0b0b0;
+}
+.page-content_left{
+	width: 26.666666vw;
+	flex-shrink: 0;
+	/* overflow显示滚动条,本身或者父级隐式或者显式说明高度，
+	 我的父亲已经overflow:hidden了，不让我挤高，我如果很高我只能听我的overflow:auto*/
+	overflow: auto;
+}
+
+/* 左列表 */
+.list-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.list-main>li{}
+.list-main>li>span{
+	/* background-color: #f00;
+	color: #fff; */
+	padding: 4px 13px;
+	margin: 13px 0;
+	display: block;
+	border-radius: 12px;
+	font-size: 13px;
+}
+
+.list-main>li.active span{
+	background-color: #f00;
+	color: #fff;
+}
+
+
+
+.page-content_right{
+	flex: 1;
+	padding: 2.666666vw;
+	border-left: 1px solid #b0b0b0;
+	background-color: #eee;
+	overflow: auto;
+}
+
+p.empty,ul.list-sub{display: none;}
+p.empty.show,ul.list-sub.show{display: block;}
+
+.avatar{
+	width: 100%;
+	border-radius: 12px;
+}
+.list-sub{
+	width: 100%;
+	height: 100%;
+	margin-top: 16px;
+	background-color: #fff;
+	border-radius: 12px;
+}
+.list-sub>li{
+	float: left;
+	width: calc( 100% / 3 - 10px );
+	height: calc((100% - 40px) / 4 );
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.list-sub>li span{
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: #666;
+	font-size: 12px;
+}
+.list-sub>li img{
+	width: 100%;
+}
+
+
+
+
+.page-footer{
+	height: 13.333333vw;
+	flex-shrink: 0;
+}
+
+/* 菜单 */
+.page-footer>iframe{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+

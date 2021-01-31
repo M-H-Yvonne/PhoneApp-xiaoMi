@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/public/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/Validform/Validform_v5.3.2.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/regions_picker/regions_picker_m.css"/>
+		<title>地址管理</title>
+	</head>
+	<body>
+		<div class="page-container">
+			<div class="page-header">
+				<a class="page-back dis"><img src="address-ph1.png" ></a>
+				<a class="sel-back"><img src="address-ph1.png" ></a>
+				<span>收货地址</span>
+			</div>
+			<div class="page-content">
+				<div class="page-change show">
+					<div class="change-box">
+						<div class="empty">
+							<img src="address-ph2.png" >
+							<p>您还没有收货地址，请点击下方+新建</p>
+						</div>
+						<ul class="address-data"></ul>
+					</div>
+					<div class="page-footer">
+						<div class="footer-btn">
+							<span>+添加地址</span>
+						</div>
+					</div>
+				</div>
+				<div class="write-address">
+					<div>
+						<span>收货姓名</span>
+						<input type="text" class="addName" placeholder="请输入收货人姓名">
+					</div>
+					<div>
+						<span>手机号码</span>
+						<input type="text" class="phone" placeholder="请输入收货人电话">
+					</div>
+					<div>
+						<span>所在地区</span>
+						<input type="text" class="regions-picker" placeholder="请选择省/市/区/街道">
+					</div>
+					<div>
+						<span>详细地址</span>
+						<input type="text" class="detail" placeholder="请输入街道地址">
+					</div>
+					<div class="btn-default">
+						<i>√</i>
+						<span>设为默认地址</span>
+					</div>
+					<div class="del"><span>删除地址</span></div>
+					<button class="save">保存</button>
+					<button type="button" class="revise">修改</button>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		<script src="/public/js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/Validform/Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/regions_picker/regions.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/regions_picker/regions_picker_m.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

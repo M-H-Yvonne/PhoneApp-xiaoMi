@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/layer_mobile/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/font/iconfont.css"/>
+		<title>商品列表</title>
+	</head>
+	<body>
+		<div class="page-container">
+			<div class="page-serch">
+				<!-- 后退 -->
+				<div class="back">
+					<i class="iconfont icon-back"></i>
+				</div>
+				<!-- 搜索 -->
+				<div>
+					<div class="serch-write">
+						<input type="text"  />
+						<i class="serch-write_btn">搜索</i>
+					</div>
+				</div>
+				<!-- 列表转换 -->
+				<div class="page-serch_choose">
+					<i class="iconfont icon-category sel"></i>
+					<i class="iconfont icon-category1"></i>
+				</div>
+				
+			</div>
+			<div class="page-dress">
+				<div>
+					<div class="page-serch_order">
+						<i class="iconfont icon-desc"></i>
+						<i class="iconfont icon-asc sel"></i>
+					</div>
+					<div class="page-serch_ch">
+						<p data-choose="price" class="ser-price active">价格</p>
+						<p data-choose="sale">销量</p>
+						<p data-choose="rate">好评</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="spread hide-scroll">
+				<ul class="spread-list cross"></ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		<script src="/public/layer_mobile/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/js/jQuery-extend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

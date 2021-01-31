@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/public/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/css/reset.css"/>
+		<title>购物车</title>
+	</head>
+	<body>
+		<div class="page-container">
+			<div class="page-content">
+				<div class="contain">
+					<!-- title -->
+					<div class="cart-title">
+						<i class="iconfont icon-back"></i>
+						<span>购物车</span>
+						<b class="write">编辑</b>
+					</div>
+					<!-- 小米自营 -->
+					<div class="own">
+						<i class="check all" data-chooseall='false'>&radic;</i>
+						<span>小米自营</span>
+					</div>
+					<!-- 商品 -->
+					<ul class="product hide-scroll"></ul>
+				</div>
+				
+			</div>
+			<div class="page-settlement clearfix">
+				<div class="checkAll">
+					<i class="check all" data-chooseall='false'>&radic;</i>
+					<span>全选</span>
+				</div>
+				<div class="total">
+					<p>
+						<span>合计：</span>
+						<span>￥<b class="totalprice">0.00</b></span>
+					</p>
+					<div>
+						<button type="button" class="tol">结算<span class="totalnumbers">(<i></i>)</span></button>
+						<button type="button" class="del">删除<span class="totalnumbers">(<i></i>)</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<script src="/public/js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/js/jQuery-extend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

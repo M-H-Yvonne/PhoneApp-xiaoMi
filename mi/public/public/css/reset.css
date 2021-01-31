@@ -1,0 +1,45 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+ol{
+	list-style: none;
+}
+b{
+	font-weight: normal;
+}
+i{
+	font-style: normal;
+}
+
+/* 隐藏滚动条 */
+.hide-scroll::-webkit-scrollbar{
+	display: none;
+}
+
+/* 清除浮动 */
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	width: 0;
+}
+
+.ellipsis{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+

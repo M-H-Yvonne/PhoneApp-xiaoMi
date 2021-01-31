@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/layer_mobile/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/public/font/iconfont.css"/>
+		<title>我的订单</title>
+	</head>
+	<body>
+		<div class="page-container hide-scroll">
+			<div class="popup">
+				<div class="detail-login_box">
+					<div>您确定要删除该订单吗？</div>
+					<div>
+						<p class="closeDetailLogin">不要</p>
+						<p class="login">是的</p>
+					</div>
+				</div>
+			</div>
+			<div class="contain">
+				<div class="page-header">
+					<div class="title">
+						<i class="iconfont icon-back"></i>
+						<span>我的订单</span>
+						<i class="iconfont icon-serch"></i>
+					</div>
+				</div>
+				<div class="page-content">
+					<ul class="title-select">
+						<li class="active"><span>全部</span></li>
+						<li><span>待付款</span></li>
+						<li><span>待收货</span></li>
+					</ul>
+					<div class="orders">
+						<div class="box active">
+							<div class="have all"></div>
+							<div class="empty whole">
+								<div>
+									<img src="myOeder-ph1.png" >
+								</div>
+								<p>目前没有订单</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="have waitpay"></div>
+							<div class="empty waitpay">
+								<div>
+									<img src="myOeder-ph1.png" >
+								</div>
+								<p>目前没有待付款订单</p>								
+							</div>
+						</div>
+						<div class="box">
+							<div class="have noreceive"></div>
+							<div class="empty noreceive">
+								<div>
+									<img src="myOeder-ph1.png" >
+								</div>
+								<p>目前没有待收货订单</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<script src="/public/js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/js/jQuery-extend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/layer_mobile/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

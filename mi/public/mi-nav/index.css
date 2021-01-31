@@ -1,0 +1,57 @@
+.page-footer_nav{
+	display: flex;
+	height: 100%;
+}
+.page-footer_nav>li{
+	width: 20%;
+}
+.page-footer_nav>li>a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.page-footer_nav>li>a>b{
+	width: 24px;
+	height: 24px;
+	background: url(/mi-nav/img/nav_bg.png) no-repeat;
+	background-size: cover;/* 在维持图片原始宽高比不变的情况下缩小到和盒子一样大小的 */
+}
+.page-footer_nav>li:nth-child(1) b{
+	background-position: 0 0;
+}
+.page-footer_nav>li:nth-child(2) b{
+	background-position: 0 22.222222%;
+}
+.page-footer_nav>li:nth-child(3) b{
+	background-position: 0 44.444444;
+}
+.page-footer_nav>li:nth-child(4) b{
+	background-position: 0 66.666666%;
+}
+.page-footer_nav>li:nth-child(5) b{
+	background-position: 0 88.888888%;
+}
+
+.page-footer_nav>li:nth-child(1).active b{
+	background-position: 0 11.111111%;
+}
+.page-footer_nav>li:nth-child(2).active b{
+	background-position: 0 33.333333%;
+}
+.page-footer_nav>li:nth-child(3).active  b{
+	background-position: 0 55.555555%;
+}
+.page-footer_nav>li:nth-child(4).active b{
+	background-position: 0 77.777777%;
+}
+.page-footer_nav>li:nth-child(5).active b{
+	background-position: 0 100%;
+}
+.page-footer_nav>li>a>i{
+	font-size: 12px;
+	display: block;
+	color: #999;
+}
